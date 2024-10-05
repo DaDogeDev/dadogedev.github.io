@@ -11,6 +11,7 @@
             padding: 0;
             cursor: url("cursor.png"), auto;
         }
+	
         .header {
             position: sticky;
             top: 0;
@@ -20,17 +21,16 @@
             margin-left: 0%;
             margin-right: 0%;
         }
-        h1, h2, h3, h4, h5, h6, p, font, summary, li {
+        h1, h2, h3, h4, h5, h6, p, font, summary, li, marquee {
             font-weight: 800;
             font-size: 25px;
-            -webkit-text-fill-color: fill;
-            -webkit-text-stroke: 2px black;
         }
         .contents {
     margin-left: 25%;
     margin-right: 25%;
     padding: 20px;
     text-align: center;
+
 }
 
         .small-text {
@@ -65,7 +65,7 @@
     <div class="contents">
 
 
-        <audio autoplay="" loop="" src="bg.mp3" type="audio/mpeg"></audio>
+        <marquee width="100%" direction="left" height="70px">Welcome To My Page!</marquee>
 
         <details open="">
             <summary>About Me</summary>

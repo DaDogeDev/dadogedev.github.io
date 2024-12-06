@@ -1,0 +1,46 @@
+body {
+  background-image: url("Background.png");
+  background-size: 20%, 20%;
+  font-family: 'Courier New', monospace;
+  cursor: url("cursor.png"), auto;
+}
+#topbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(255, 255, 255, 0.4) inset; /* Depth and shine */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  z-index: 10;
+  margin-left: 5%; margin-right: 5%;  
+  position: sticky;
+  top: 0;
+  padding: 1px;
+  border-radius: 25px;
+  background-color: #cba6f7;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+  filter: drop-shadow(0 0 5px #000000);
+}
+
+#content {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(255, 255, 255, 0.4) inset; /* Depth and shine */
+backdrop-filter: blur(10px); /* Frosted glass effect */
+
+background-color: #b4befe;
+padding: 1px;
+border-radius: 25px;
+text-align: center;
+margin-left: 10%;
+margin-right: 10%;
+top: 0;
+}
+
+p {
+  font-size: 125%;
+}

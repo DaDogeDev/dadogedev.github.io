@@ -2,7 +2,7 @@ body {
   background-image: url("Background.png");
   background-size: 20%, 20%;
   font-family: 'Courier New', monospace;
-  cursor: url("cursor.png"), auto;
+  cursor: url('cursor.png'), auto;
 }
 #topbar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(255, 255, 255, 0.4) inset; /* Depth and shine */

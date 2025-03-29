@@ -1,7 +1,11 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./UbuntuNerdFont-Regular.ttf')
+}
 body {
   background-image: url("Background.png");
   background-size: 20%, 20%;
-  font-family: 'Courier New', monospace;
+  font-family: 'Ubuntu';
   cursor: url('cursor.png'), auto;
 }
 #topbar {

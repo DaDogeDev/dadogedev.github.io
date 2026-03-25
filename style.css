@@ -1,69 +1,93 @@
 @font-face {
-  font-family: 'Hack';
-  src: url('./HackNerdFont-Regular.ttf')
+    font-family: 'Tecnico';
+    src: url('TecnicoFino-xX70.ttf') format('truetype');
 }
+
 body {
-  background-color: #282828;
-  font-family: 'Hack';
-  color: #ebdbb2;
-}
-#bar {
-  background-image: url('Bar.png');
-  background-size: 100% 100%;
-  display: flex;
-  width: 100%;
-  height: 100px;
-  justify-content: space-evenly;
-  border-radius: 25px;
-  
+    background-image: Url("wall.png");
+    background-size: 30%;
+    margin: 0;
+    background-attachment: fixed;
 }
 
-#bottom {
-  height: auto;
-  width: 100%;
-  position: fixed;
-  z-index: 10;
-  bottom: 0;
+
+#tape {
+    top: 0;
+    z-index: 1;
+    position:fixed;
+    height: 250px;
+    width: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
-#pc {
-  height: 200px;
-  margin-left: 80%;
+#graf {
+    z-index: 1;
+    position: fixed;
+    margin-left: 80%;
 }
 
-.icon {
-  transition: transform 0.3s ease;
-}
-
-.icon:hover {
-  transform: scale(1.5);
-  filter: drop-shadow(0 0 5px #000000);
-}
-
-#content {
-  padding: 1px;
-  border-radius: 25px;
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 200px;
-  top: 0;
-}
-
-#content img {
-  height: 200px;
-  width: auto;
-}
-
-p {
-  font-size: 125%;
+#bp {
+    font-family: 'Tecnico';
+    color: #ffff;
+    position: relative;
+    top: 0;
+    z-index: 9999;
+    background-image: url("bp.jpg");
+    background-size: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin-top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border-style: solid;
+    border-color: #689bf7;
+    border-width: 5px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 img {
-  max-width: 100%;
-  max-height: auto;
+    max-width: 100%;
+    max-height: 100%;
+
 }
 
-a {
-  color: #458588;
+#logo {
+    height: 200px;
+    width: auto;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+#gif {
+    height: 300px;
+    width: auto;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+#parts, #demo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#esp {
+    height: 300px;
+    width: auto;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+@media (orientation: portrait) {
+  #bp {
+    width: 80%;
+    margin-top: 50px;
+  }
 }

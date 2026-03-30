@@ -21,7 +21,18 @@ body {
     filter: drop-shadow(5px 5px 5px #222);
 }
 
+#cables {
+    right:0;
+    top: 0;
+    z-index: 1;
+    position:fixed;
+    height: 150px;
+    width: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+} 
+
 #graf {
+    top: 300px;
     z-index: 1;
     position: fixed;
     margin-left: 80%;
@@ -40,7 +51,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 25px;
-    margin-top: 150px;
+    margin-top: 50px;
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
@@ -51,34 +62,17 @@ body {
     filter: drop-shadow(5px 5px 5px #222);
 }
 
-img {
+#bp img {
     max-width: 100%;
     max-height: 100%;
-
-}
-
-#logo {
-    height: 200px;
-    width: auto;
     -webkit-filter: drop-shadow(1px 1px 1px #222);
     filter: drop-shadow(1px 1px 1px #222);
+    object-fit: contain
+
 }
 
-#gif {
-    height: 300px;
-    width: auto;
-    -webkit-filter: drop-shadow(1px 1px 1px #222);
-    filter: drop-shadow(1px 1px 1px #222);
-}
-
-#parts, #demo {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#esp {
-    height: 300px;
-    width: auto;
+#title {
+  padding: 40px;
 }
 
 p {
@@ -88,6 +82,6 @@ p {
 @media (orientation: portrait) {
   #bp {
     width: 80%;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 }

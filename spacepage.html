@@ -1,56 +1,102 @@
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <title>DaDogeDev's Space Page</title>
-    <link rel="icon" type="image/x-icon" href="Doge.png">
-  </head>
+<!DOCTYPE html>
+<html lang="en">
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+  <title>Links</title>
 
-    <div id="content">
+  <style>
+    #pics {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    #pics img {
+      height: 400px;
+      width: auto;
+      margin: 20px;
+      justify-content: center;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+    }
+    #pics img:hover, #pics img:focus, #pics img:active {
+      -webkit-transform: scale(1.1) rotate(4deg);
+      transform: scale(1.1) rotate(4deg);
+    }
 
-        <h1>DaDogeDev's Space Page</h1>
-        <p>A page with astronomy related pictures i took!</p>
-        <p>I have a Skylux 70/700 Telescope, which to be honest is a really good telescope for starters!</p>
-        <p>I've had it for about 2 years and I've taken alot of pictures through it!</p>
-            <h1>Moon</h1>
-            <img src="moon1.jpg" alt="Moon1" style="height:40%; width:auto">
-            <img src="moon2.jpg" alt="Moon2" style="height:40%; width:auto">
-            <img src="moon3.jpg" alt="Moon3" style="height:40%; width:auto">
-            <img src="moon4.jpg" alt="Moon4" style="height:40%; width:auto">
-            <img src="moon5.jpg" alt="Moon5" style="height:40%; width:auto">
-            <img src="venusandmoon.jpg" alt="Venus And Moon" style="height:40%; width:auto">
-            <img src="issandmoon.jpg" alt="Iss And Moon" style="height:40%; width:auto">
-            <h1>Misc</h1>
-            <img src="Hubble.jpg" alt="Hubble Space Telescope Model" style="height:40%; width:auto">
-            <p>Hubble Space Telescope Model</p>
-            <img src="Sputnik.jpg" alt="Sputnik I Model" style="height:40%; width:auto">
-            <p>Sputnik I Model</p>
-            <img src="Vostok.jpg" alt="Vostok Spacecraft Model" style="height:40%; width:auto">
-            <p>Vostok Spacecraft Model</p>
-            <img src="Buran.jpg" alt="Buran Model" style="height:40%; width:auto">
-            <p>Buran Model</p>
-            <img src="Proton.jpg" alt="Proton Model" style="height:40%; width:auto">
-            <p>Proton Model</p>
-            <img src="Titan.jpg" alt="Titan II Model" style="height:40%; width:auto">
-            <p>Titan II Model</p>
-            <img src="Shuttle.jpg" alt="Space Shuttle Model" style="height:40%; width:auto">
-            <p>Space Shuttle Model</p>
-            <img src="Planet Alignment 27th June 2022.png" alt="Planet Alignment 27th June 2022" style="height:40%; width:auto">
-            <p>Planet Alignment 27th June 2022</p>
-            <img src="PartialSolarEclipse October25,2022.jpg" alt="Partial Solar Eclipse October 25th 2022" style="height:40%; width:auto">
-            <p>Partial Solar Eclipse October 25th 2022</p>
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 99999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.85);
+      justify-content: center;
+      align-items: center;
+    }
 
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px black;
+      transform: scale(1);
+    }
 
+  </style>
+
+</head>
+
+<body>
+  <img src="media/HangTape.png" id="tape">
+  <img src="media/HangCables.png" id="cables">
+  <img src="media/1702graf.png" id="graf">
+  <img src="media/Milesgraf.png" id="graf2">
+
+  <div id="bp">
+    <div id="bar">
+      <a href="index.html"><img class="icon" src="media/home.png"></a>
+      <a href="spacepage.html"><img class="icon" src="media/planet.png"></a>
+      <a href="links.html"><img class="icon" src="media/link.png"></a>
+      <a href="hardware.html"><img class="icon" src="media/pc.png"></a>
     </div>
-        <div id="bottom">
-     <a href="https://dadogedev.github.io/thecomputecafe"><img src="Computer.png" id="pc"></a>
-      <div id="bar">
-          <a href="index.html"><img class="icon" src="home.png" alt="home" height="100px" width="auto"></a>
-          <a href="spacepage.html"><img class="icon" src="planet.png" alt="space" height="100px" width="auto"></a>
-          <a href="links.html"><img class="icon" src="link.png" alt="links" height="100px" width="auto"></a>
-          <a href="hardware.html"><img class="icon" src="pc.png" alt="hardware" height="100px" width="auto"></a>
+      <h1>DaDogeDev's Space Page</h1>
+      <p>A page with astronomy related pictures i took!</p>
+      <p>I have a Skylux 70/700 Telescope, which to be honest is a really good telescope for starters!</p>
+      <p>I've had it for about 2 years and I've taken alot of pictures through it!</p>
+      <div id="pics">
+        <img src="media/planetalign.png" alt="Planet Alignment 27/6/2022">
+        <img src="media/partsolareclipse.png" alt="Partial Solar Eclipse 25/10/2022">
+        <img src="media/venusandmoon.png" alt="Venus And Moon 2023">
+        <img src="media/issandmoon.png" alt="Iss And Moon 2023">
+        <img src="media/moon1.png" alt="Full Moon 2024 (1)">
+        <img src="media/moon2.png" alt="Full Moon 2024 (2)">
+        <img src="media/moon3.png" alt="Full Moon 2024 (3)">
+        <img src="media/moon4.png" alt="Full Moon 2024 (4)">
+        <img src="media/moon5.png" alt="Full Moon 2024 (5)">
+        <img src="media/dipper.png" alt="Big Dipper 26/6/2025">
+        <img src="media/greecefull.png" alt="Full Moon Greece 9/7/2025">
+        <img src="media/1quarter.png" alt="First Quarter 2/8/2025">
+        <img src="media/lunareclipse.png" alt="Lunar Eclipse 7/9/2025">
       </div>
-    </div>
-    <script src="script.js"></script>
+
+  </div>
+  <div id="lightbox" class="lightbox">
+        <img id="lightbox-img" src="">
+      </div>
+  <script src="script.js"></script>
+
 </body>
 </html>

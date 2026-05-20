@@ -24,19 +24,18 @@ function activateEasterEgg() {
     window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; 
 }
 
-function win95() {
-	document.body.style.backgroundImage = "url('sky.png')";
-	document.body.style.fontFamily = "Times New Roman";
-	const topbar = document.getElementById("topbar");
-	content.style.backgroundColor = "#c0c0c0";
-	topbar.style.borderRadius = "0px";
-	topbar.style.border = "2px solid #fff";
-	topbar.style.borderBottomColor = "#404040";
-	topbar.style.borderRightColor = "#404040";
-	topbar.style.backgroundColor = "#c0c0c0";
-	content.style.borderRadius = "0px";
-	content.style.border = "2px solid #fff";
-	content.style.borderBottomColor = "#404040";
-	content.style.borderRightColor = "#404040";
-}
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+document.querySelectorAll("#pics img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
 

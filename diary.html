@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+  <title>Miles' Diary</title>
+  <style>
+    #notebook {
+        font-family: 'Comic', sans-serif;
+        color: #2b2b2b; /* Dark, graphite-pencil look for text */
+        position: relative;
+        top: 0;
+        z-index: 9999;
+
+        /* Notebook paper background effects */
+        background-color: #fffefa; /* Slightly warm off-white paper */
+        background-image:
+            /* Vertical pinkish-red notebook margin line */
+            linear-gradient(90deg, transparent 79px, #ff8b8b 79px, #ff8b8b 81px, transparent 81px),
+            /* Horizontal blue notebook lines mapped to match standard line height */
+            linear-gradient(#d3e2f2 1px, transparent 1px);
+        background-size: 100% 100%, 100% 2rem;
+        line-height: 2rem; /* Keep text locked perfectly on the blue lines */
+
+        display: flex;
+        flex-direction: column;
+
+        /* Padding-left must clear the red margin line comfortably */
+        padding: 40px 40px 40px 100px;
+        margin-top: 20em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+
+        /* Clean modern paper edges with a subtle realistic shadow */
+        border: 1px solid #dcdcdc;
+        -webkit-filter: drop-shadow(8px 8px 12px rgba(0,0,0,0.4));
+        filter: drop-shadow(8px 8px 12px rgba(0,0,0,0.4));
+    }
+
+    /* Adjust heading spacings to flow naturally with the notebook spacing */
+    #notebook h1.diary-title {
+        font-family: 'Tecnico', sans-serif;
+        color: #1c3d75;
+        font-size: 3rem;
+        margin: 0 0 0.5rem 0;
+        line-height: 3rem;
+        text-align: left;
+    }
+
+    #notebook .diary-subtitle {
+        color: #666;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    #notebook h2 {
+        font-family: 'Tecnico', sans-serif;
+        color: #3b629b;
+        font-size: 1.6rem;
+        margin-top: 2.5rem;
+        margin-bottom: 0.5rem;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    #notebook p {
+        font-size: 1.2rem;
+        margin: 0 0 1.5rem 0;
+    }
+
+    #notebook ul {
+        margin: 0 0 1.5rem 0;
+        padding-left: 20px;
+    }
+
+    #notebook li p {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Ensure images inside the notebook don't inherit weird filtering */
+    #notebook img {
+        max-width: 100%;
+        max-height: 100%;
+        width:auto;
+        -webkit-filter: drop-shadow(1px 1px 1px #222);
+        filter: drop-shadow(1px 1px 1px #222);
+        object-fit: contain
+    }
+
+  @media (orientation: portrait) {
+    #notebook {
+      width: 80%;
+      margin-top: 10px;
+    }
+  }
+  </style>
+</head>
+
+<body>
+
+  <img src="media/HangTape.png" id="tape">
+  <img src="media/HangCables.png" id="cables">
+  <img src="media/1702graf.png" id="graf">
+  <img src="media/Milesgraf.png" id="graf2">
+
+  <div id="notebook">
+    <div id="bar">
+          <a href="index.html"><img class="icon" src="media/home.png" alt="home"></a>
+          <a href="spacepage.html"><img class="icon" src="media/planet.png" alt="space"></a>
+          <a href="links.html"><img class="icon" src="media/link.png" alt="links"></a>
+          <a href="hardware.html"><img class="icon" src="media/pc.png" alt="hardware"></a>
+          <a href="diary.html"><img class="icon" src="media/diary.png" alt="diary"></a>
+      </div>
+
+    <h1 class="diary-title">Miles' Diary</h1>
+    <p class="diary-subtitle"><em>The complete records of the Kingdom, the Fall, and the Aftermath.</em></p>
+    <br>
+
+    <h2>August 12th</h2>
+    <p>Idk how to start this diary<br>
+    I get picked on by other workers, they are calling me <em>cinnamon</em>, 'cause of my tail, pipsqueak, <em>'cause of my build</em>, Kilo cause of kilometers.<br>
+    Today someone told me:<br>
+    "Hey Kilometers, why don't you put on some <em>kilos</em>, ya twink, hahahaha!" then went on giggling with the other workers.<br>
+    I don't really have a good relation with the others, but it is what it is.</p>
+
+    <h2>August 13th 2031</h2>
+    <p>Today, during my time at work, I tripped and fell, hitting my head on the concrete wall, <em>I got a gashing wound on my forehead next to my left eyebrow</em>, it really, <em>REALLY hurts</em>. I was rushed into the hospital to get stitches, now I am fine, even though it still hurts.<br>
+    <em>I was given an implant as well so the doctor can monitor my state, I had a minor brain injury.</em></p>
+
+    <h2>August 20th 2031</h2>
+    <p>It has been a week since I have injured myself on the construction site, the wound is slowly healing but I'm fine. From this day forward, I will be more careful and wear protective gear. <strong>Safety comes 1st!!</strong>Which is ironic coming from me lol!</p>
+
+    <h2>September 13th 2031</h2>
+    <p>It has been a month since the construction incident, my wound has healed fully but <em>I forgot to go to my doctor to get the stitches removed</em>.</p>
+
+    <h2>December 25th 2031</h2>
+    <p>Today when I was on my evening stroll through downtown, a guy stopped me and introduced himself as <strong>King Dog</strong>. He told me about how he wants to make a <strong>micronation</strong>, or a micro <strong>kingdom</strong> if you will, I thought it was a fun little project so I wanted to take part in it! I love how confident he sounds, like he actually believes <strong>he can run a kingdom.</strong></p>
+
+    <h2>December 26th 2031</h2>
+    <p>Today, I quit my construction job to join King Dog's kingdom. He wants me to build the entire castle from the ground up, it might take a long while (<em>including my procrastination</em>) but it would be worth it, I hope not another <strong>incident</strong> will happen...<br>
+    There I met a couple of other peeps, we have:</p>
+    <ul>
+      <li><p>The General, he looks like a chill dude, he is tall, a bit on the bigger side, no offense haha, tho he is really good at football</p></li>
+      <li><p>The Magician, nothing special about him, just some random ass guy who wanted to join, he does have some pretty cool tricks, if I could guess he could be a jester or some shit, idfk</p></li>
+      <li><p>Jimmy, again, nothing really much about him, he is the general's little brother, he is small little guy</p></li>
+      <li><p>and finally the King's twin, you can see the <strong>jealousy</strong> on his face towards the King</p></li>
+    </ul>
+
+    <h2>December 30th 2031</h2>
+    <p>I don't have to build everything from the ground up, we found an old abandoned castle-like structure next to <strong>a big river</strong> which would save us a lot of work and it's becoming cold so honestly, a lifesaver, we already have a shelter! If I would guess, renovating this would take us <strong>around 2 weeks and building a big wall around a week</strong>, we aren't doing rocket surgery.<br>
+    The King already has ideas for walls and flags, even though we haven’t picked up a single brick yet.</p>
+
+    <h2>January 13th 2032</h2>
+    <p>It was the new year, yay! Anyway, I renovated the structure and should start working on the walls and the gate. I skipped a few meals and completely exhausted myself. I want this finished ASAP!</p>
+
+    <h2>January 20th 2032</h2>
+    <p>The gates are finished too! And things are already looking sweet. I can't believe we have this whole micronation just for ourselves! It's like we are living the lives of our dreams! Though, <strong>the King is getting bossy</strong>, but hey It's not that bad, he probably just wants things in order.<br>
+    I noticed something, <em>when I'm doing something I like, I finish fast.</em></p>
+
+    <h2>January 27th 2032</h2>
+    <p>The General was absent for 2 whole days, and he came back with a golden trophy, I'm so proud of 'em! I could have never guessed a guy big as him would be good at sports, but hey, <strong>don't judge a book by its cover</strong>.</p>
+
+    <h2>February 17th 2032</h2>
+    <p>Happy birthday to me, yay!<br>
+    The King wanted to do <strong>something special for my birthday to show respect</strong> but didn't know what, I'm sure he will <strong>think of something next year</strong>, though the Magician had a cool trick, like he made me pick a card, I chose the ace of hearts, and it was somehow in his mouth, like how? There has to be a way around that, as a man of science, I do not believe in magic, but whatever...</p>
+
+    <h2>February 24th 2032</h2>
+    <p>It has been a week since my birthday and the King apologized for not having a gift, but he got me one, even though it was a week later. The gift he got me was a new uniform, <em>a bright blue shirt with the "Da Doge Developers" logo on the front and the text that says Dev team on the back</em>, Da Doge Developers is the name we gave to the construction team, it came after my nickname <em>DaDogeDev or triple D for short</em>. I was super thankful, also blue is my favorite color. Until this point I have been wearing my old uniform from the construction job. When I put it on, I felt like it belonged on me, the blue color (I love blue) also compliments my fur color. It basically works as a high-vis jacket because most of the things you see here are yellowish-orange.</p>
+
+    <h2>February 25th 2032</h2>
+    <p>With a new shirt, I thought why don't I treat myself to a new hard hat, you know to match with my new shirt. So I made a new one out of scraps and parts from old electronics. <em>A metal base, with 2 holes cut out for my ears, that I just patched with some electrical tape, caution tape for high vis, a cool looking LCD display on the front and some stickers</em>, you can never go wrong with stickers!<br>
+    I connected the components to a controller board that communicates with the implant so I can get cool diagnostics!</p>
+
+    <h2>March 4th 2032</h2>
+    <p>Another day, more whining...<br>
+    Jimmy hit his head on a wall, heh I wonder where I have heard that before. I helped bring the first aid kit and help him recover, poor lil guy.<br>
+    <strong>Seems like head injuries are a theme around here.</strong></p>
+
+    <h2>August 1st 2032</h2>
+    <p>The king keeps making me make things that aren't really necessary and are a waste of time and that he came up with when he was bored I guess...<br>
+    Oh well, but <strong>I can notice his ego getting bigger, thinking he is on top of the world and that he can do anything</strong>, like we are just a micronation with barely a mile in our radius (pun intended). Though, he found out about another small group of people, or should I say <strong>felines</strong> that he has <strong>beef with them for no fucking reason...</strong></p>
+
+    <h2>August 6th 2032</h2>
+    <p>I wanted to bake something for the kingdom today, so I thought, why not bake the simplest thing, bread, how hard could it be?<br>
+    Well, I was wrong, totally wrong, who knew that letting an blue collar worker into a kitchen was a bad idea. I put a little bit too much yeast and <strong>KABOOOM</strong>, the kitchen looked like <strong>a whole war happened here</strong>. Luckily the Magician was here, or I’d still be buried under yeast. He helped me clean the mess up and bake a new loaf, who knew a Magician would be good at baking...<br>
+    I swear I saw dough flying across the room like it had a mind of its own… and I was definitely not proud of the mess I made.</p>
+
+    <h2>August 20th 2032</h2>
+    <p>As a technician, you can't really be organized, everything is out of wack, boxes here, tools there, and today, like in the middle of the night, I got motivation to clean my whole workshop and organize stuff.</p>
+
+    <h2>October 31st 2032</h2>
+    <p>Wow, who knew cleaning the workshop would result in me losing the diary for 2 months, haha!<br>
+    Anyway it's halloween and I thought it would be clever if I were a Werewolf for halloween because, I mean, I am a canine and I love space and stargazing, and looking at the moon through my telescope. Anyway, the King was a vampire, General a Frankenstein, Jimmy a mummy, the Magician, well, a Magician and the twin, Spiderman.</p>
+
+    <h2>December 25th 2032</h2>
+    <p>It has been a year since we founded the kingdom, and the King told me <strong>he has some plans for the future</strong> and I'm not sure what to think about that, guessing what he means is basically a random number generator. <strong>Either it’s a good thing… or something so narcissistic you can’t even imagine</strong>. And how much he has been telling me to make this, make that, he is starting to piss me off, he started to <strong>treat me like his own personal laborer</strong> to make him every single little idea he got while he was shampooing his royal fur...</p>
+
+    <h2>December 28th 2032</h2>
+    <p>I have noticed the King's twin has been gone for a whole day, I asked the king about it and he said something like: <strong>"Who, what, the twin? Have I seen him? No not at all... Uuuh I think he went on a walk..."</strong>. This wasn’t just regular unsureness, he sounded so unsure like he was making up a <strong>lie</strong> right on the spot, it's only <strong>a matter of time</strong> until we find out what he's <strong>covering up</strong>.<br>
+    The General told me he was coming back from <strong>the river</strong> that is in front of our Castle, <strong>paws dirty, fur soaked, clothes dripping</strong>.</p>
+
+    <h2>December 29th 2032</h2>
+    <p>Judging from the state we saw the King yesterday, <em>curious</em>, I went to the river myself, and my jaw dropped from what I saw...<br>
+    There was a <strong>blade</strong> sticking out of the sand by the river, but you could argue: "Oh, well someone random, somewhere random just threw a blade in the river and it just so happened to get caught in the sand next to the castle", but, this looks like it was intentionally partially dug in to be <strong>hidden</strong>, and not only that, there was <strong>a piece of blue cloth</strong>, which is the <strong>same color of the King's and the twin's shirt.</strong><br>
+    There is definitely something fishy going on (pun intended). Later today I went and told the General what I saw, his face explained everything, he said something like that his suspicions were right ,<strong>the way the king acted so unsure and suspicious, he was soaking wet and now a fucking blade, he definitely did something to the twin...</strong></p>
+
+    <h2>January 1st 2033</h2>
+    <p>Its 2033, and <strong>I cannot stand this guy anymore.</strong> He is acting like nothing happened, like WE don't know what he did. He just continues to cover up the truth and to be the egotistical self. <em>I can sense the guilt in him,</em> he is just pretending like nothing happened, he can't keep getting away with this! If his twin deserves a <strong>blade to the head</strong>, so does HE! You know what they say, <strong>twin like twin.</strong><br>
+    I cannot believe I trusted this guy with my whole life...</p>
+
+    <h2>January 3rd 2033</h2>
+    <p>By every single passing day, after the <strong>incident</strong>, my hatred towards him has been getting beige and beige, I still cannot fucking believe I trusted him with my whole life, <strong>like how could he kill one of his own people</strong>, let alone his own fucking twin brother.<br>
+    From now on, <em>I will analyze every one of his words, every movement, every single centimeter he moves</em>. Like I am super scared, what if I am next on his list, what if it's the General, <strong>his life long friend</strong>...</p>
+
+    <h2>January 5th 2033</h2>
+    <p>Ok this passes <strong>all boundaries</strong>...!<br>
+    Today he stood up to everyone and announced that for my birthday he wants to sacrifice a fucking <strong>cat</strong>, why?! I don't know, to show me respect!? This isn't how respect should be shown! First the <strong>murdering</strong> of his own twin brother, <strong>now he wants to take another innocent life</strong> just because he can???<br>
+    To what kind of piece of abysmal dogshit did I dedicate my time to?</p>
+
+    <h2>January 7th 2033</h2>
+    <p>The General himself too cannot believe what his <strong>lifelong best friend</strong> is doing, <strong>he has been through war, he knows how it looks like losing an innocent life</strong>, I cannot imagine what thoughts are going through his head.<br>
+    Us 2 agreed on <strong>doing what has to be done, giving the King his own medicine</strong>...</p>
+
+    <h2>January 11th 2033</h2>
+    <p>This is it...<br>
+    <strong>The King is gone</strong><br>
+    So what exactly happened?<br>
+    Well, this morning, while the King was still snoring in his royal sleep, the General and me tied him up and put him next to the river.<br>
+    He was still drowsy and completely confused. After throwing him in the cold winter water, he woke up, and he started shouting, asking what the fuck was going on. We explained that we knew what he did, then he straight out confessed about what he had done, he said something like:<br>
+    "Ok, y'all got me, it's my fault...<br>
+    The Twin wanted to do a blade duel to show who is superior, and he pushed me in the water, I grabbed onto his foot and climbed out, but in the process he slipped and fell in the water himself, not knowing how to swim, he started drowning so I just <strong>stabbed my blade into his head right there on the spot</strong> instead of helping him.<br>
+    Why? Well, we've always had a brotherly <strong>rivalry</strong>, since we were little cubs, but, ever since I founded this kingdom, he was super jealous of me, and he was my main obstacle this whole time!<br>
+    He always wanted to sabotage me to show that he is superior, and now i took this chance to finally cut him off <strong>once and for all</strong>"<br>
+    After that whole ass confession, the General confronted the King, pulled out the very blade from the ground the King himself buried and <strong>stabbed him in the head</strong>:<br>
+    "Oh, so that is so?<br>
+    Well still, he might have interfered with your work, but that doesn't give you any right to just straight out <strong>kill him??</strong><br>
+    Oh, and another thing, you don't wanna address your ego, your narcissism, your sheer selfishness to just kill an innocent life, and then wanna kill another one to show "respect" to your own laborer at this point? That isn't how respect is shown, you have <strong>betrayed us</strong> King Dog...<br>
+    Now, you know what they say <strong>twin like twin...</strong>"<br>
+    After that was done, we just dumped his body in the river, got back to the kingdom, and <strong>I was in charge</strong> now, I, <em>just a regular blue collar worker</em>, is supposed to control an entire kingdom...<br>
+    <strong>Hope this goes well...</strong></p>
+
+    <h2>January 17th 2033</h2>
+    <p>A month until my birthday… I wonder what crazy things are going to happen. I’m worrying about the future of the kingdom. I don’t know what I’m doing. Oh well… <strong>I hope everything goes well.</strong> With him gone, what’s the worst that can happen?</p>
+
+    <h2>February 2nd 2033</h2>
+    <p>January wasn’t that interesting… literally nothing happened. At least it’s February, and <strong>my birthday is soon</strong>. I hope <strong>something interesting happens</strong> that day.</p>
+
+    <h2>February 18th 2033</h2>
+    <p><strong>I've seen hell…</strong> Yesterday, I was woken up by a loud bang, by who, you might ask? Well, the cats!<br>
+    Apparently they found out that the King wanted to harm them on that day. They wanted to strike back. We were slaughtered… The General tried fighting back. I tried helping the rest escape. After everything was demolished, we escaped the kingdom and watched it burn from afar.<br>
+    I later fled to a bordering country, a GIANT country compared to our little, now ruined micronation. I was in tears. Everything I built is now just dust in the dirt. But oh well… <strong>All good things have endings.</strong></p>
+
+    <h2>February 19th 2033</h2>
+    <p>After two days under the cold winter weather, I finally made it to the capital. Along the way, <em>I found a jacket to warm myself</em>. I have no money, no food, no place to live — just my hard hat, my toolbox, and me.<br>
+    THAT GAVE ME AN IDEA!<br>
+    What if I worked as a freelancer around the city, fixing stuff? That could get me money <strong>and probably a roof over my head</strong>.</p>
+
+    <h2>March 1st 2033</h2>
+    <p>After a week of freelancing, I made a few bucks and felt satisfied. I found an old abandoned building that I renovated a bit, which is now my workshop. <strong>I hope I get a real home very soon.</strong></p>
+
+    <h2>March 8th 2033</h2>
+    <p>I've noticed <em>my hair is getting longer</em> but I am not bothered to cut it, too much effort! And I like it like this.</p>
+
+    <h2>June 3rd 2033</h2>
+    <p>March blurred into April. April turned into May. May into June…<br>
+    Work, sleep, repeat. Nothing changed but the weather.<br>
+    I didn’t feel like writing. I didn’t feel like… anything.<br>
+    I feel hopeless, just me, in my dusty workshop, trying to survive.<br>
+    I even have to keep my repair prices low just to get customers. If my prices were higher, it’s a big difference between hiring a professional or hiring a homeless little piece of dogshit for the same price.<br>
+    <strong>I just hope things turn out better…</strong></p>
+
+    <h2>June 10th 2033</h2>
+    <p>Today was quite an interesting day, I got called to come in and repair an AC unit, I thought it would be another regular boring repair...<br>
+    I walked into the apartment, it was small, really small, made for 1 to 2 people. Anyway, I got to work right away and I started small talk with the <strong>friendly guy</strong> who lived there, the conversation went something like:</p>
+    <ul>
+      <li><p>"You know, an AC unit is quite important for an apartment small like yours, hehe."</p></li>
+      <li><p>"Yeah I know, especially in this day and age, <strong>wars</strong>, global warming, it's getting really hot"</p></li>
+    </ul>
+    <p>While we were talking, <em>I noticed</em> <strong>a uniform</strong> hanging on the other side of the room with the name tag <strong>Lazar</strong>, and I asked him:</p>
+    <ul>
+      <li><p>"Oooh, is that your uniform, are you a <strong>military personnel</strong>?!"</p></li>
+      <li><p>"Hell yeah dude, I just got put in a <strong>non deployment state</strong>, I'm free until <strong>November of next year</strong>."</p></li>
+      <li><p>"Oooh, nice nice, tell me more about your position, will ya, <em>I'm quite interested</em>!"</p></li>
+      <li><p>"So I got drafted in 2029, training was rough honestly until I got put into action in 2030, it wasn't that bad honestly, not that much action but in 2031 was pretty bad, those filthy rebels are so good at defending, like you can't push a city at all even with tanks! They just camp roofs and pick us off with snipers and RPGs, we had to call in a lot of air support for those guys. So, what about you kiddo, what is your interesting story?"</p></li>
+      <li><p>"Heheh, well, this is quite a long story, i documented everything in my diary!"</p></li>
+      <li><p>"Oh, cool cool, can I see?"</p></li>
+      <li><p>"Sure!"</p></li>
+    </ul>
+    <p>One 20 minutes later, he read my diary and felt really sorry for the Trauma he went through, <strong>he knows how is it losing a friend</strong>.<br>
+    Even though his apartment is small, he offered me to live with him, which i gladly agreed on!<br>
+    Man, even though he looks rough and dangerous on the outside, he is so sweet on the inside.</p>
+
+    <h2>August 7th 2033</h2>
+    <p>After a few months living with Lazar, I gotta say, I'm loving it, I've never felt so cared about ever before, and this got me thinking, did the King even care about me, or was I just a personal slave to him, and then he pretended to show empathy and respect... Interesting to think about, anyway, my mental health is getting overall better, after <strong>a long time of being isolated</strong>! I feel fucking great!</p>
+
+    <h2>August 15th 2033</h2>
+    <p>Today, Lazar and I decided to fix up an old car he has in his old garage, and you can just imagine the whole day, it was like:<br>
+    Bro to bro bonding time while fixing an old ass car with an energy drink and a beer in their hands respectfully<br>
+    The whole day was loads of fun, and I learnt that I am an electronics guy and that he is a vehicle guy, pretty cool parallels!</p>
+
+    <h2>October 3rd 2033</h2>
+    <p>Another day another dollar, I think it's what they say...<br>
+    Anyway, today at work was pretty bland, nothing really happened, some guy brought an old PC that he said had a virus and didn't want it anyway soooo, I just gave him 20 dollars for it, reformated the disk and turned it into a home server for my workshop. Could you even call it a homelab or a workshop lab...</p>
+
+    <h2>October 8th 2033</h2>
+    <p>Lazar told me stories from the military today:<br>
+    In the barracks he met a guy named Tyler, they called him Tylo. In 2033 when Tylo and him were in a building just chilling, from the other building across the street, an enemy rebel sniper shot Tylo through the window, Tylo flew to the ground bleeding! He didn't know what to do, so he dragged him to cover first and bandaged that area to stop the bleeding. Thankfully nearby units arrived quickly and Tylo got saved, he went back home after that.<br>
+    Wow, that must have been traumatizing, I cannot imagine losing him...</p>
+
+    <h2>October 20th 2033</h2>
+    <p>Today, a middle aged lady walked into my workshop and asked for her phone to be fixed. It appeared that the display was heavily broken and the battery was swollen and I told her that this would cost a bit more than the 20 dollars she wanted it for. She started putting "authority" and saying something along the lines "I know what I've got young man!", people who want to put their authority up really piss me off...<br>
+    So anyway I started negotiating if she wants it fixed for the real price or fixed for 20 dollars, she wanted it for 20, so what am I gonna do, just replace the battery, because that would actually hurt her, yeah yeah she is being a bitch but I don't wanna hurt anyone.</p>
+
+    <h2>October 27th 2033</h2>
+    <p>After I gave back the phone to her, she started flipping out how dare I not fix the screen too and I just calmly replied:<br>
+    "Ma'am, if you aren't gonna pay the full price, then stop complaining, you know what they say, how much money you give, that much music, now GET OUT!"<br>
+    Man, I hate those types of people...</p>
+
+    <h2>November 5th 2033</h2>
+    <p>Today I tinkered with the home server a bit more. Added a few extra drives and made a simple backup system. Honestly, sometimes I feel like I have a small kingdom of my own here—less drama, zero assassination attempts, and the servers never talk back. Definitely a good upgrade from actual kings.</p>
+
+    <h2>December 15th 2033</h2>
+    <p>Someone dropped off a broken laptop that looked like it survived a hurricane. Took me 3 hours to get it running, but I did it. Client left a small tip and called me a “wizard.” Honestly, I’ll take it. Wizard or DaDogeDev, same thing.</p>
+
+    <h2>December 24th 2033</h2>
+    <p>Lazar today started ranting about construction workers:<br>
+    "Construction workers are wizards dude, like, how do they spawn in cranes without anyone noticing?!"<br>
+    To which I replied with:<br>
+    "Not giving away my trade secrets, hehe!"<br>
+    And then he made a valid point:<br>
+    "Dude, we need that kind of technology in the military, like, we are all about stealth and such, like how the fuck do you do that!?"<br>
+    Still not giving away any secrets!</p>
+
+    <h2>December 25th 2033</h2>
+    <p>Christmas was quiet. Lazar brought me some leftover food and we shared a small meal in the workshop. No presents, no royal decrees, no bloodshed. Just two guys, an old laptop, a self hosted media server, and a heater that barely works. Peace is weird… but I think I like it.</p>
+
+    <h2>January 8th 2034</h2>
+    <p>First snow of the year. Workshop looks like a winter wonderland, minus the wonder. Tried shoveling the sidewalk but ended up making a bigger mess than before. Lazar laughed at me—he said it looked like I was “remodeling a kingdom.” He’s not wrong.</p>
+
+    <h2>February 17th 2034</h2>
+    <p>It is my birthday again, Lazar swung up to my workshop and gave me some snacks, he said that after work we should meet up. So I did.<br>
+    When I met him after work he gifted me a screwdriver set, a Swiss army knife and a fresh can of WD40 with a note that said "Lube for you know what ( ͡° ͜ʖ ͡°)" which was hilarious!</p>
+
+    <h2>February 18th 2034</h2>
+    <p>And the said lube was for fixing up the old ass car we have in the garage, you know the typical, we spent the whole day hanging out, fixing the car, drinking beer and energy drinks respectfully. After that, both of us were tired so we just blacked out in the car seats liked absolute mad men we are!</p>
+
+    <h2>March 2nd 2034</h2>
+    <p>If i had a shot, or in my case a full can of Monster, for every time during this winter only i have been called to fix a heater, I would be fucking dead by now, but oh well, spring is on the way! Anyway, today I didn't fix a heater, someone brought a bluetooth speaker saying that he will need it for picnics and such, which gave me an idea, anyway I fixed the speaker, and got to planning, which I'm horrible at!<br>
+    What if, because spring is coming, Lazar and me finally test the baby we have been fixing up all winter and go paintball, should be fun?</p>
+
+    <h2>April 2nd 2034</h2>
+    <p>A month later after I made the plan, and we did it!<br>
+    Today was a blast! (pun intended)<br>
+    At 1st we were super excited because the car showed life and after a bit of more troubleshooting we got it to work almost flawlessly, or so we thought...<br>
+    After we got to the paintball range, the car literally broke down, so I was like <em>"Future me would take care of that, now let's have fun!"</em><br>
+    Let's just say I didn't think this through, everything hurts, my legs, my arms, my head, everything, gah...<br>
+    Lazar tried to help but there's nothing he can do really, I'm just a crybaby.<br>
+    Anyway, because we couldn't do anything with the car, we called the towing company to take the car and drive us home too, let's just say it was awkward when they came and saw a rust old car next to 2 dudes all in bruises.<br>
+    Also Lazar jokingly told me to man up.</p>
+
+    <h2>May 1st 2034</h2>
+    <p>Ah, labor day, I'm not working today, that means me and Lazar have one free day, and what's the best way to spend this day than grilling bbq!<br>
+    Nothing much to talk about today, it was really fun and I've had a great time, when the sun set, I pulled out my telescope and we stargazed for a bit, after that we just fell asleep in the car yet again!</p>
+
+    <h2>July 3rd 2034</h2>
+    <p>I don't really have anything to talk about, the diary has been collecting dust, life is stable but dry. Customer in, customer out. Repair this, repair that. I don't have any complaints except that every day feels the same you know, but hey at least we don't have a murder mystery to solve anymore...</p>
+
+    <h2>November 21st 2034</h2>
+    <p>Today was Lazar's birthday, but it wasn't all sunshine and rainbows...<br>
+    He reminded me that he has to go back to deployment tomorrow, he is giving the apartment to me and that he will keep in touch regularly, just so I know he will be in deployment until (placeholder)...<br>
+    Even though I know we will still stay in touch, I feel like a big chunk of me is leaving...</p>
+
+    <h2>December 25th 2034</h2>
+    <p>The day and the place where it all started, the river, the castle, the sword. All there in one place, like how they were left, like if this place was frozen in time.<br>
+    I was bored of the constant cycle of Wake up, go to work, come home, eat, sleep, repeat, and on Christmas I figured, I should go visit the ruins...<br>
+    And now I don't know if it's my mind playing games with me again, but I had a whole argument with what appeared to be King Dog's ghost...<br>
+    I do not want to get into details, the whole previous period has been really stressing, and I don't even feel the motivation of writing in here anymore...</p>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
